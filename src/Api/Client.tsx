@@ -1,3 +1,6 @@
+import { resourceLimits } from "worker_threads";
+import { BikeCard } from "../Components/Bike/BikeCard";
+
 export interface Bike {
     date_stolen : string;
     description: string;
@@ -23,5 +26,14 @@ export async function getBikes(): Promise<Array<Bike>> {
     if (!results.ok) {
         throw new Error(await results.json());
       }
-    return bikes.bikes;
+    return bikes.bikes.sort((a:Bike,b:Bike) => +b.date_stolen - +a.date_stolen);
+}
+
+export async function getBikeById(id: string): Promise<Bike> {
+    const results = await fetch(`https://bikeindex.org:443/api/v3/bikes/${id}`);
+    const data = await results.json();
+    if (!results.ok) {
+        throw new Error(await results.json());
+      }
+    return data.bike;
 }

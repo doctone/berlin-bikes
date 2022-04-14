@@ -1,0 +1,8 @@
+.heading {
+    width: 100vw;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
