@@ -18,7 +18,7 @@ export function BikeDetailPage():JSX.Element {
     }
     return <div className="bike-detail-info">
         <h1>{bike.description}</h1>
-        <img src={bike.large_img} alt="" width={'100em'} />
+        <img src={bike.large_img} alt="" width={'500em'} />
         <p>{bike.frame_colours}</p>
         <p>{bike.frame_model}</p>
         <p>{bike.manufacturer_name}</p>
