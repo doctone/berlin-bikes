@@ -1,5 +1,12 @@
 .bike-card {
     border: 2px solid black;
     display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-bottom: 1em;
+}
+
+.bike-card img {
+    grid-row-start: span 5;
+    margin-left: 1em;
+    margin-top: 3em;
 }
