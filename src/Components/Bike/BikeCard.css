@@ -6,7 +6,7 @@
 }
 
 .bike-card img {
-    grid-row-start: span 5;
+    grid-row-start: span 6;
     margin-left: 1em;
     margin-top: 3em;
 }

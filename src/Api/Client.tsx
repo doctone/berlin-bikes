@@ -26,7 +26,7 @@ export async function getBikes(): Promise<Array<Bike>> {
     if (!results.ok) {
         throw new Error(await results.json());
       }
-    return bikes.bikes.sort((a:Bike,b:Bike) => +b.date_stolen - +a.date_stolen);
+    return bikes.bikes.sort((a:Bike,b:Bike) => +a.date_stolen - +b.date_stolen);
 }
 
 export async function getBikeById(id: string): Promise<Bike> {
