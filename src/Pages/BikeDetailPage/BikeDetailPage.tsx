@@ -2,6 +2,7 @@ import React, { useEffect, useState, useSyncExternalStore } from "react";
 import { useParams } from "react-router-dom";
 import { Bike, getBikeById } from "../../Api/Client";
 import "./BikeDetailInfo.css";
+import { Link } from 'react-router-dom';
 
 export function BikeDetailPage():JSX.Element {
     const [bike, setBike] = useState<Bike>();
@@ -17,6 +18,7 @@ export function BikeDetailPage():JSX.Element {
         return <div>loading...</div>
     }
     return <div className="bike-detail-info">
+        <Link to="/" className="home-link">Back to bikes</Link>
         <h1>{bike.description}</h1>
         <img src={bike.large_img} alt="" width={'500em'} />
         <p>{bike.frame_colours}</p>
