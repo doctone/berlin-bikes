@@ -3,10 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 1em;
+    width: 80vw;
 }
 
 .bike-card img {
     grid-row-start: span 3;
-    margin-left: 1em;
-    margin-top: 3em;
+    margin: 0.1em;
+    border: 2px solid black;
+    min-height: 100px;
 }

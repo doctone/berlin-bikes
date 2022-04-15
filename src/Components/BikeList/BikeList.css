@@ -1,0 +1,10 @@
+.bike-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.bike-list__total {
+    margin-top: 2em;
+    margin-left: 80%;
+}
