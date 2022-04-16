@@ -14,22 +14,6 @@ function MapComponent({latitude, longitude}) {
     googleMapsApiKey: "AIzaSyApmSiv7SUFk4BbTrI601_9hhC2abRyz1o"
   })
 
-  const [map, setMap] = useState(null)
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
-
-  // if (!map) {
-  //   return <div>loading... </div>
-  // }
-
   return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
@@ -38,10 +22,7 @@ function MapComponent({latitude, longitude}) {
           lng: longitude
             }
           }
-        zoom={5}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
+        zoom={15}>
       </GoogleMap>
   ) : <></>
 }
