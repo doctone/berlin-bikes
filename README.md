@@ -5,22 +5,23 @@ This app needs to display the list of reported bike thefts based on the Bikewise
 Product Requirements
 As a police officer:
 
- I want to see a list of reported bike thefts for the Berlin area.
- I want to see a detail page of the reported bike.
- I want to see the first 10 bike theft cases, with the ability to - paginate (10 cases per page).
- I want to see a total number of bike theft cases.
- For each reported bike theft I want to see:
- Case title
- Case description
- Date of the theft
- Date of when the case was reported
- Location of the theft
- Picture of the bike, if available
- I want to filter reported bike thefts by partial case title.
- I want to see a loading state until the list is available.
- I want to see an error state if the list is unavailable.
- I want to see an empty state if there are no results.
-Your Mission
+ I want to see a list of reported bike thefts for the Berlin area. <br>
+ I want to see a detail page of the reported bike. <br> 
+ I want to see the first 10 bike theft cases, with the ability to - paginate (10 cases per page). <br>
+ I want to see a total number of bike theft cases. <br>
+ For each reported bike theft I want to see: <br>
+ Case title <br>
+ Case description <br>
+ Date of the theft <br>
+ Date of when the case was reported <br>
+ Location of the theft <br>
+ Picture of the bike, if available <br>
+ <br>
+ I want to filter reported bike thefts by partial case title. <br>
+ I want to see a loading state until the list is available. <br>
+ I want to see an error state if the list is unavailable. <br>
+ I want to see an empty state if there are no results. <br>
+Your Mission<br>
 Create the React application that satisfies all must-have requirements above, plus any nice-to-have requirements you wish to include.
 
 For that, you’ll need to make requests to a publicly-available API to get JSON content and print it on view.
