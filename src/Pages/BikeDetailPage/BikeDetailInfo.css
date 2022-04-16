@@ -2,9 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 .home-link {
     margin-right: 80%;
     margin-top: 2em;
+}
+
+.stolen {
+    font-weight: bold;
+    color: red;
+}
+.found {
+    font-weight: bold;
+    color: green;
 }

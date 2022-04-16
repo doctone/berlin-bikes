@@ -22,11 +22,25 @@ export function BikeDetailPage():JSX.Element {
         <img src={bike.large_img} alt="" width={'500em'} />
         <h1>{bike.title}</h1>
         <h3>{bike.description}</h3>
-        <p>{bike.frame_colours}</p>
-        <p>{bike.frame_model}</p>
-        <p>{bike.manufacturer_name}</p>
-        <p>Status : {bike.status}</p>
-        <p>{bike.stolen_location}</p>
+        <table>
+            <tr>
+                <th>Status:</th>
+                <td className={bike.status === 'stolen' ? 'stolen' : 'found'}>{bike.status}</td>
+      
+            </tr>
+            <tr>
+                <th>Model:</th>
+                <td>{bike.frame_model}</td>
+            </tr>
+            <tr>
+                <th>Manufacturer:</th>
+                <td>{bike.manufacturer_name}</td>
+            </tr>
+            <tr>
+                <th>Location:</th>
+                <td>{bike.stolen_location}</td>
+            </tr>
+        </table>
             </div>
     
 }
