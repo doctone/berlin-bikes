@@ -10,8 +10,8 @@ export function BikeList({bikes}:{bikes:Bike[]}):JSX.Element {
     return (
         <>
         <ul className='bike-list'>
-            {bikes.map(b => (
-                <BikeCard bike={b} />
+            {bikes.map((b,i) => (
+                <BikeCard bike={b} key={i} />
             ))}
         </ul>
         </>
