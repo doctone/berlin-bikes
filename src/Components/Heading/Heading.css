@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .heading {
     width: 100vw;
-    background-color: rgb(150, 150, 150);
+    background-color: #282c34;
+    color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
