@@ -8,6 +8,8 @@
     text-decoration: none;
     list-style: none;
     display: flex;
+    margin-bottom: 1em;
+    margin-top: 0;
 }
 .bike-list-page li {
     margin-right: 1em;

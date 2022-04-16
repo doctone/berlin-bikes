@@ -18,7 +18,7 @@ export function BikeDetailPage():JSX.Element {
         return <div>loading...</div>
     }
     return <div className="bike-detail-info">
-        <Link to="/" className="home-link">Back to bikes</Link>
+        <Link to="/" className="home-link"> {"<"}Back to bikes</Link>
         <img src={bike.large_img} alt="" width={'500em'} />
         <h1>{bike.title}</h1>
         <h3>{bike.description}</h3>

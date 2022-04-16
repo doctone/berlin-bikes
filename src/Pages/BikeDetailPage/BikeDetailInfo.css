@@ -8,6 +8,8 @@
 .home-link {
     margin-right: 80%;
     margin-top: 2em;
+    font-size: 1.7em;
+    text-decoration: none;
 }
 
 .stolen {
@@ -17,4 +19,8 @@
 .found {
     font-weight: bold;
     color: green;
+}
+
+a:visited {
+    color: inherit;
 }

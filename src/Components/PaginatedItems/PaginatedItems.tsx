@@ -31,6 +31,7 @@ export function PaginatedItems({
 
     return (
       <>
+      <img src="https://t3.ftcdn.net/jpg/02/33/01/18/360_F_233011872_mkQuPcwam2o7dSXi6OZAojBncSzy2LKf.jpg" alt="" height={"200em"} />
         <ReactPaginate
           breakLabel="..."
           nextLabel="next >"
