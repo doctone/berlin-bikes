@@ -1,6 +1,6 @@
 Stolen bikes are a typical problem in Berlin. The Police want to be more efficient in resolving stolen bike cases. They decided to build a software that can automate their processes — the software that you're going to develop.
 
-This app needs to display the list of reported bike thefts based on the Bikewise API.
+This app needs to display the list of reported bike thefts based on the Bikewise API (https://bikeindex.org/documentation/api_v3).
 
 Product Requirements
 As a police officer:
