@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Bike, getBikeById } from "../../Api/Client";
 import "./BikeDetailInfo.css";
 import { Link } from 'react-router-dom';
+import MapComponent from "../../Components/Map/MapComponent";
 
 export function BikeDetailPage():JSX.Element {
     const [bike, setBike] = useState<Bike>();
@@ -12,7 +13,6 @@ export function BikeDetailPage():JSX.Element {
         if (id === undefined) return
         getBikeById(id).then(setBike);
     }, [])
-    
     
     if (bike === undefined) {
         return <div>loading...</div>
@@ -41,6 +41,7 @@ export function BikeDetailPage():JSX.Element {
                 <td>{bike.stolen_location}</td>
             </tr>
         </table>
+        <MapComponent latitude={bike.stolen_coordinates[0]} longitude={bike.stolen_coordinates[1]} />
             </div>
     
 }

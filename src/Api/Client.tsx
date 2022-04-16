@@ -6,6 +6,7 @@ export interface Bike {
     description: string;
     frame_colours: string[];
     frame_model: string;
+    stolen_coordinates: number[];
     id: number;
     large_img: string;
     location_found: string;
